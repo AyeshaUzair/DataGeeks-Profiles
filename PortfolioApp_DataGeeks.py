@@ -1,6 +1,5 @@
 import streamlit as st
 import base64
-from st_aggrid import AgGrid
 import pandas as pd
 
 
