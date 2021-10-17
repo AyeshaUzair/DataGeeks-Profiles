@@ -3,9 +3,9 @@ import base64
 import pandas as pd
 
 
-main_bg = "/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/image10.jpg"
+main_bg = "image10.jpg"
 main_bg_ext = "jpg"
-side_bg = "/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/image9.jpg"
+side_bg = "image9.jpg"
 side_bg_ext = "jpeg"
 st.markdown(
     f"""
@@ -33,7 +33,7 @@ dropdown = st.sidebar.selectbox("Select member to view profile", ["Ayesha Uzair"
 
 if dropdown == "Ayesha Uzair":
     st.title("Ayesha Uzair")
-    st.sidebar.image("/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/Ayesha.PNG", width=300)
+    st.sidebar.image("Ayesha.PNG", width=300)
     x = st.sidebar.radio("Select option to view details", ["About", "Experience", "Education", "Skills", "Contact"])
     if x == "About":
         st.write("Hello, I am Ayesha from the Data Geeks Team. :sunglasses:")
@@ -121,7 +121,7 @@ if dropdown == "Ayesha Uzair":
 
 if dropdown == "Rebecca Palmer":
     st.title("Rebecca Palmer")
-    st.sidebar.image("/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/Rebecca_full.jpg", width=300)
+    st.sidebar.image("Rebecca_full.jpg", width=300)
     # x = st.sidebar.radio("Select Option",["About", "Experience", "Education", "Skills", "Contact"])
     st.header("Work Experience")
     col1, col2, col3 = st.columns(3)
@@ -157,7 +157,7 @@ if dropdown == "Rebecca Palmer":
         "Sales & Marketing Co-ordinator"
         "Administrator"
     st.header("Education")
-    df_education = pd.read_csv("/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/education_rebecca.csv")
+    df_education = pd.read_csv("education_rebecca.csv")
     df_education.set_index('From')
     st.table(df_education)
     st.header("Personal")
