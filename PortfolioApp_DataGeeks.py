@@ -97,6 +97,86 @@ if dropdown == "Ayesha Uzair":
             "M.Sc. Information Tech."
             "B.Sc. Electrical Engg."
 
+    if x == "Skills":
+        st.markdown("---")
+        st.markdown(
+            """
+            ### Programming Skills
+            - Python
+            - Javascript
+            - C++
+            - Verilog
+            - R (basics)
+            """
+        )
+        st.markdown("---")
+        st.markdown(
+            """
+            ### Data Science Skills
+            - Pandas
+            - Numpy
+            - PySpark
+            - Scikit-Learn
+            - Matplotlib
+            - Cufflinks
+            - Seaborn
+            - Keras
+            - Tensorflow
+            - Sqlalchemy
+            - wxPython, Tkinter, etc.
+            """
+        )
+        st.markdown("---")
+        st.markdown(
+            """
+            ### Design Tools
+            - wxFormBuilder
+            - CMake
+            - MATLAB
+            - Simulink
+            - Targetlink
+            - Proteus
+            - CAD
+            - ADS
+            - HFSS
+            - CST Microwave Studio
+            - MapInfo Professional
+            """
+        )
+        st.markdown("---")
+        st.markdown(
+            """
+            ### Web
+            - HTML
+            - CSS
+            - PostgreSQL
+            - MySQL
+            - XML
+            - AWS (basics)
+            """
+        )
+        st.markdown("---")
+        st.markdown(
+            """
+            ### Other Tools
+            - Git
+            - SVN
+            - Jira
+            - CMake
+            - IBM Watson
+            - MS Office Suite
+            """
+        )
+        st.markdown("---")
+        st.markdown(
+            """
+            ### Languages
+            - English
+            - German
+            - Urdu
+            """
+        )
+
     if x == "Contact":
         st.subheader("Contact Info: ")
         st.write("**Address:** Aachen, Germany")
