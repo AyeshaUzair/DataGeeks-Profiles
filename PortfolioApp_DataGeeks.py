@@ -44,6 +44,15 @@ if dropdown == "Ayesha Uzair":
         st.write("Currently, I am a student of AI/ML Bootcamp organized by The Code to Change.")
         st.markdown("""<a href="https://www.linkedin.com/in/ayesha-uzair/">Linkedin</a>""", unsafe_allow_html=True, )
         st.markdown("""<a href="https://github.com/AyeshaUzair">Github</a>""", unsafe_allow_html=True, )
+        st.markdown("---")
+        st.markdown(
+            """
+            ### Publication
+            "*Polarimetric Scattering Mechanism Analysis of Automotive Landmarks*" 
+            presented in the International Radar Symposium 2020 in the session titled "Automotive Radar 2". 
+            It is available on IEEEXplore.
+            """
+        )
 
     if x == "Experience":
         col1, col2, col3 = st.columns(3)
