@@ -1,8 +1,4 @@
-
-
-import streamlit
 import streamlit as st
-# import geometry
 import base64
 from st_aggrid import AgGrid
 import pandas as pd
@@ -10,7 +6,7 @@ import pandas as pd
 
 main_bg = "/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/image10.jpg"
 main_bg_ext = "jpg"
-side_bg = "/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/image4.jpg"
+side_bg = "/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/image9.jpg"
 side_bg_ext = "jpeg"
 st.markdown(
     f"""
@@ -28,34 +24,30 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-template = """<div style = 'background-color:white; padding: 1px;'>
-                <h2 style = 'color:black; text-align:center;'>Data Geeks - Team Portfolios</h2>
+template = """<div style = 'background-color:#17186e; padding: 1px;'>
+                <h2 style = 'color:white; text-align:center;'>Data Geeks - Team Portfolios</h2>
             </div>"""
-# //<img src='/Users/ayeshauzair/Downloads/images/background.png'>
 st.markdown(template, unsafe_allow_html=True)
-# st.image('/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/image5.jpg', width=704)
 
 st.sidebar.title("Member Profiles")
-# st.sidebar.image("/Users/ayeshauzair/Downloads/images/dp.png", width=100)
 dropdown = st.sidebar.selectbox("Select member to view profile", ["Ayesha Uzair", "Rebecca Palmer", "Nadia Vermaes"])
 
 if dropdown == "Ayesha Uzair":
     st.title("Ayesha Uzair")
     st.sidebar.image("/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/Ayesha.PNG", width=300)
     x = st.sidebar.radio("Select option to view details", ["About", "Experience", "Education", "Skills", "Contact"])
-    # y = st.number_input("Enter the first number")
-    # z = st.number_input("Enter the second number")
     if x == "About":
         st.write("Hello, I am Ayesha from the Data Geeks Team. :sunglasses:")
-        st.write("I'm an algorithm developer with 3+ years of work experience in software solution design and network operations. "
-                 "I possess good programming skills in Python, Javascript, C++, and MATLAB. "
-                 "My core areas of expertise are signal processing, mobile communications, machine learning, and algorithm and software development.")
+        st.write("I'm an algorithm developer with 3+ years of work experience in software solution design and network "
+                 "operations. I possess good programming skills in Python, Javascript, C++, and MATLAB. "
+                 "My core areas of expertise are signal processing, mobile communications, machine learning, and "
+                 "algorithm and software development.")
         st.write("Currently, I am a student of AI/ML Bootcamp organized by The Code to Change.")
         st.markdown("""<a href="https://www.linkedin.com/in/ayesha-uzair/">Linkedin</a>""", unsafe_allow_html=True, )
         st.markdown("""<a href="https://github.com/AyeshaUzair">Github</a>""", unsafe_allow_html=True, )
 
     if x == "Experience":
-        col1, col2, col3= st.columns(3)
+        col1, col2, col3 = st.columns(3)
         with col1:
             st.subheader("Dates")
             "Jul 2020 - Present"
@@ -130,7 +122,7 @@ if dropdown == "Ayesha Uzair":
 
 if dropdown == "Rebecca Palmer":
     st.title("Rebecca Palmer")
-    st.sidebar.image("/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/Rebecca_full.jpeg", width=300)
+    st.sidebar.image("/Users/ayeshauzair/PycharmProjects/ML_AI_Bootcamp/Assignment3/Rebecca_full.jpg", width=300)
     # x = st.sidebar.radio("Select Option",["About", "Experience", "Education", "Skills", "Contact"])
     st.header("Work Experience")
     col1, col2, col3 = st.columns(3)
@@ -171,9 +163,8 @@ if dropdown == "Rebecca Palmer":
     st.table(df_education)
     st.header("Personal")
     st.text("British citizen based in the Netherlands with work/residence permit and full driving licence")
-    st.text(
-        "Experienced in all aspectes of sales operations including sales incentive administration, sales forecasting etc.")
-
+    st.text("Experienced in all aspectes of sales operations including sales incentive administration, "
+            "sales forecasting etc.")
 
 if dropdown == "Nadia Vermaes":
     st.title("Nadia Vermaes")
